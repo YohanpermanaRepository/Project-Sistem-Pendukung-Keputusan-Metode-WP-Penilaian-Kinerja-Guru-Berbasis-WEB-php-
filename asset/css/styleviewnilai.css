@@ -1,0 +1,107 @@
+.section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#B3AB94;
+    border-radius: 6px 6px 0 0;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-header-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    border: 1px solid #dbdbdb;
+  }
+  
+  .table th {
+    text-align: left;
+    background-color:#B3AB94;
+    color: #fff;
+  }
+  
+  .has-background-success {
+    background-color:#B3AB94;
+  }
+  
+  .has-text-white {
+    color: #fff !important;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    margin-right: 0.5rem;
+  }
+  
+  .is-link {
+    background-color:#B3AB94;
+    color: #fff;
+    background-color:#B3AB94;
+  }
+  
+  .is-link:hover {
+    background-color:#B3AB94;
+    background-color:#B3AB94;
+  }
+  
+  .is-danger {
+    background-color: #f14668;
+    color: #fff;
+    border-color: #f14668;
+  }
+  
+  .is-danger:hover {
+    background-color: #b8324a;
+    border-color: #b8324a;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    margin: 2rem 0;
+  }
+  
+  .subtitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  

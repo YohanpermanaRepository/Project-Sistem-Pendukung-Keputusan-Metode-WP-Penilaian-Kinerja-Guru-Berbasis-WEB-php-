@@ -1,0 +1,185 @@
+/* Style for the navigation bar */
+
+.fontnya{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #19A7CE;
+    padding: 10px;
+    color: #f5f5f5;
+    font-size: 25px;
+  }
+
+.navbarjudul{
+    margin: auto;
+}
+  
+  /* Style for the navbar-brand element */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-end {
+    /* margin-left: 200px; */
+    width:max-content;
+    margin: auto;
+
+  }
+  
+  /* Style for the navbar-item elements */
+  .navbar-item {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+/* Style for the active navbar-item element */
+.navbar-item.active {
+    color: #dd4b39;
+  }
+  
+  /* Style for the buttons in the navbar */
+  .buttons .button {
+    margin-left: 20px;
+  }
+
+  
+  /* Style for the logout button */
+  .button.is-danger {
+    background-color: #dd4b39;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Style for the hover effect on navbar-items */
+  .navbar-item:hover {
+    color: #00161d;
+  }
+  
+
+
+
+  .site-footer {
+    background-color: #f8f8f8;
+    color: #777;
+    padding: 45px 0 20px 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+.site-footer hr.small {
+    margin: 20px 0;
+}
+
+.site-footer h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.site-footer ul li {
+    padding: 0px 0px 5px 0px;
+    line-height: 1.5em;
+}
+
+.site-footer ul li a {
+    color: #777;
+}
+
+.site-footer ul li a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    color: #333;
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+}
+
+
+/* CSS untuk footer-container */
+.footer-container {
+  display: flex;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+/* CSS untuk footer-section */
+.footer-section {
+  margin-left: 50px;
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+.dev{
+  margin-left: 140px;
+}
+
+
+/* CSS untuk footer-title */
+.footer-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* CSS untuk footer ul */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS untuk footer li */
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+/* CSS untuk footer a */
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CSS untuk footer a:hover */
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+
+  

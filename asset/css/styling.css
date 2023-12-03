@@ -1,0 +1,160 @@
+.section {
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    height: max-content;
+    margin-top: 100px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card-header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-content {
+    margin-top: 20px;
+  }
+  
+  .card-content p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .columns.is-centered {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .column.is-5 {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .column.is-5 {
+      max-width: 100%;
+    }
+  }
+  
+
+
+
+  /* pisah */
+
+    .field {
+        margin-bottom: 20px;
+    }
+    .label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .input {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .button.is-link {
+        background-color: #3273dc;
+        color: #f6f6f6;
+    }
+    .button.is-link:hover {
+        background-color: #0258bb;
+        color: #ffffff;
+    }
+
+    button .icon {
+      font-size: 2em;
+    }
+    .icon.is-left {
+        padding-left: 10px;
+    }
+    
+
+
+
+    /* Footer */
+       /* CSS untuk footer */
+       footer {
+        margin-top: 200px;
+        background-color: #333;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+
+    /* CSS untuk footer-container */
+    .footer-container {
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+
+    /* CSS untuk footer-section */
+    .footer-section {
+        margin-left: 50px;
+        flex-basis: 30%;
+        margin-bottom: 30px;
+    }
+
+    .dev{
+        margin-left: 140px;
+    }
+
+
+    /* CSS untuk footer-title */
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* CSS untuk footer ul */
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* CSS untuk footer li */
+    .footer-section li {
+        margin-bottom: 10px;
+    }
+
+    /* CSS untuk footer a */
+    .footer-section a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* CSS untuk footer a:hover */
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+
