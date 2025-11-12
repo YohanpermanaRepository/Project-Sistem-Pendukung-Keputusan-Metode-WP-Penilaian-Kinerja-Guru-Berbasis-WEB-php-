@@ -46,16 +46,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if (empty($errors)) {
         // Simpan password tanpa enkripsi (tidak direkomendasikan untuk produksi)
-            $sql = "INSERT INTO admin (nm_lengkap, username, password, hak_akses, nip, jenis_kelamin, no_telp, alamat) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-            $stmt = $conn->prepare($sql);
-            $stmt->execute([$nm_lengkap, $username, $password, "guru", $nip, $jenis_kelamin, $no_telp, $alamat]);
+        $sql = "INSERT INTO admin (nm_lengkap, username, password, hak_akses, nip, jenis_kelamin, no_telp, alamat) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$nm_lengkap, $username, $password, "guru", $nip, $jenis_kelamin, $no_telp, $alamat]);
 
-
-        echo "Registrasi berhasil. Silakan login.";
+        // Setelah berhasil registrasi, arahkan ke login.php
+        header("Location: login.php");
         exit;
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html>
