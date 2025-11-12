@@ -1,6 +1,5 @@
 <?php
-include include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
-
+include __DIR__ . '/../../lib/koneksi.php';
 
 // Fungsi untuk mendapatkan data admin berdasarkan ID
 function getAdminById($id_admin)

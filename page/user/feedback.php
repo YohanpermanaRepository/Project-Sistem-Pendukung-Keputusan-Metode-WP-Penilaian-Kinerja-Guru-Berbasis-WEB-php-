@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-include 'C:/xampp/htdocs/PA SPK/Aldi-167/lib/koneksi.php';
+include __DIR__ . '/../../lib/koneksi.php';
 
 // Fungsi untuk mendapatkan data komentar dengan hak akses "guru"
 function getComments() {

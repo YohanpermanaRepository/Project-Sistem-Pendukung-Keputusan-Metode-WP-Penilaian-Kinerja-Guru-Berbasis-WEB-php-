@@ -1,8 +1,7 @@
 
 <?php
 // Koneksi ke database
-include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
-
+include __DIR__ . '/lib/koneksi.php';
 
 // Fungsi untuk mendapatkan komentar berdasarkan username pengguna
 function getCommentByUsername($username) {

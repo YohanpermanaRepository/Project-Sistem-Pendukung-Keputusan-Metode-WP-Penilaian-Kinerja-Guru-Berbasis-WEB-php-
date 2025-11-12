@@ -1,20 +1,30 @@
 <?php
 // Koneksi ke database
-include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
-
+// Koneksi ke database
+include __DIR__ . '/../../lib/koneksi.php'; // ✅ hanya ini yang dipakai
 
 // Fungsi untuk mendapatkan data komentar berdasarkan hak_akses kepala_sekolah
 function getComments() {
     global $conn;
-
-    // Query untuk mengambil data komentar
     $query = "SELECT * FROM admin WHERE hak_akses = 'kepala_sekolah'";
     $stmt = $conn->prepare($query);
     $stmt->execute();
-
-    // Mengembalikan hasil query sebagai array associative
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+
+// Fungsi untuk mendapatkan data komentar berdasarkan hak_akses kepala_sekolah
+// function getComments() {
+//     global $conn;
+
+//     // Query untuk mengambil data komentar
+//     $query = "SELECT * FROM admin WHERE hak_akses = 'kepala_sekolah'";
+//     $stmt = $conn->prepare($query);
+//     $stmt->execute();
+
+//     // Mengembalikan hasil query sebagai array associative
+//     return $stmt->fetchAll(PDO::FETCH_ASSOC);
+// }
 
 // Fungsi untuk mengupdate komentar berdasarkan ID
 function updateComment($id, $comment) {
@@ -134,7 +144,7 @@ $comments = getComments();
 
 
 <?php
-include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
+include __DIR__ . '/../../lib/koneksi.php';
 
 
 // Fungsi untuk mendapatkan data dari tabel "admin"

@@ -69,7 +69,7 @@
       <tbody>
         <?php
         // Mengimpor file koneksi.php dengan menggunakan include
-        include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
+        include __DIR__ . '/../../lib/koneksi.php';
 
 
         // Query untuk mengambil data nama lengkap dan komentar dari tabel admin dengan hak_akses guru

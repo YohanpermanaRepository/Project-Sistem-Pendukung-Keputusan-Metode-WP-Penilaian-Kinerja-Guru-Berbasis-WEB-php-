@@ -1,5 +1,5 @@
 <?php
-include 'C:/xampp/htdocs/PA SPK/Kelompok14/lib/koneksi.php';
+include __DIR__ . '/../../lib/koneksi.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
