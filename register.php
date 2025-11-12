@@ -45,13 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     if (empty($errors)) {
-        // Hash password
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // Simpan password tanpa enkripsi (tidak direkomendasikan untuk produksi)
+            $sql = "INSERT INTO admin (nm_lengkap, username, password, hak_akses, nip, jenis_kelamin, no_telp, alamat) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$nm_lengkap, $username, $password, "guru", $nip, $jenis_kelamin, $no_telp, $alamat]);
 
-        // Simpan data ke database
-        $sql = "INSERT INTO admin (nm_lengkap, username, password, hak_akses, nip, jenis_kelamin, no_telp, alamat) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute([$nm_lengkap, $username, $hashed_password, "guru", $nip, $jenis_kelamin, $no_telp, $alamat]);
 
         echo "Registrasi berhasil. Silakan login.";
         exit;
@@ -189,7 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="no_telp">
             <label>Alamat:</label>
             <textarea name="alamat"></textarea>
-            <label>Kode Token:</label>
+            <label>Kode Token:(teacher)</label>
             <input type="text" name="komentar" required>
             <input type="submit" value="Register">
         </form>
